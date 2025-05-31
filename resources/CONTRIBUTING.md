@@ -20,7 +20,7 @@ mkdir -p $GOPATH/src/uber
 cd $GOPATH/src/uber
 git clone git@github.com:your_github_username/athenadriver.git
 cd athenadriver
-git remote add upstream https://github.com/uber/athenadriver.git
+git remote add upstream https://github.com/mrz1836/athenadriver.git
 git fetch upstream
 ```
 

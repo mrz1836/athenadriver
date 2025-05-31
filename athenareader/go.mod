@@ -1,8 +1,8 @@
-module github.com/uber/athenadriver/athenareader
+module github.com/mrz1836/athenadriver/athenareader
 
 go 1.13
 
 require (
-	github.com/uber/athenadriver v1.1.15
+	github.com/mrz1836/athenadriver v1.2.0
 	go.uber.org/fx v1.12.0
 )

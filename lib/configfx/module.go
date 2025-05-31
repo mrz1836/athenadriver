@@ -30,8 +30,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	secret "github.com/uber/athenadriver/examples/constants"
-	drv "github.com/uber/athenadriver/go"
+	secret "github.com/mrz1836/athenadriver/examples/constants"
+	drv "github.com/mrz1836/athenadriver/go"
 	"go.uber.org/config"
 	"go.uber.org/fx"
 )
@@ -151,13 +151,13 @@ func new(p Params) (Result, error) {
 				os.Exit(1)
 			}
 		}
-		path := goPath + "/src/github.com/uber/athenadriver/athenareader/athenareader.config"
+		path := goPath + "/src/github.com/mrz1836/athenadriver/athenareader/athenareader.config"
 		if _, err = os.Stat(path); err == nil {
 			copyFile(path, homeDir()+"/athenareader.config")
 			provider, err = config.NewYAML(config.File(path))
 		} else {
 			err = downloadFile(homeDir()+"/athenareader.config",
-				"https://raw.githubusercontent.com/uber/athenadriver/master/athenareader/athenareader.config")
+				"https://raw.githubusercontent.com/mrz1836/athenadriver/master/athenareader/athenareader.config")
 			if err != nil {
 				d, _ := os.Getwd()
 				println("could not find athenareader.config in home directory or current directory " + d)

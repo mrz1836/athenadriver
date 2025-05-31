@@ -29,8 +29,8 @@ import (
 	"sync"
 	"time"
 
-	secret "github.com/uber/athenadriver/examples/constants"
-	drv "github.com/uber/athenadriver/go"
+	secret "github.com/mrz1836/athenadriver/examples/constants"
+	drv "github.com/mrz1836/athenadriver/go"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )
