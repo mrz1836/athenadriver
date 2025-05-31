@@ -7,7 +7,7 @@ require (
 	github.com/aws/aws-sdk-go v1.51.3
 	github.com/cactus/go-statsd-client/statsd v0.0.0-20200423205355-cb0885a1018c
 	github.com/jedib0t/go-pretty/v6 v6.2.7
-	github.com/stretchr/testify v1.9.0
+	github.com/stretchr/testify v1.10.0
 	github.com/uber-go/tally/v4 v4.1.17
 	github.com/xwb1989/sqlparser v0.0.0-20180606152119-120387863bf2
 	go.uber.org/config v1.4.0
